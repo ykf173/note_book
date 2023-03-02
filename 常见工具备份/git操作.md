@@ -58,9 +58,15 @@ git status
 git log --graph --oneline
 ```
 
+* 问题1：permission denied
 
+  ![image-20230302143432374](/Users/langming/我的/private/笔记/常见工具备份/assets/image-20230302143432374.png)
 
+* 解决方案：
 
+> 1. 可能是被墙了
+> 2. 采用ssh方式`git remote add origin git@github.com:ykf173/note_book.git`
 
-<font color="red"> 报错：git 错误 fatal: Not a valid object name: 'master'. </font>
-	本地需要commit，建立连接，但是这会直接交到master ????
+* 问题2:：报错：git 错误 fatal: Not a valid object name: 'master'. 
+  	本地需要commit，建立连接，但是这会直接交到master ????
+* 
