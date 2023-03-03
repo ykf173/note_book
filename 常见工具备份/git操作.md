@@ -69,4 +69,15 @@ git log --graph --oneline
 
 * 问题2:：报错：git 错误 fatal: Not a valid object name: 'master'. 
   	本地需要commit，建立连接，但是这会直接交到master ????
-* 
+* 同时使用GitHub，Gitlab
+
+
+
+* github设置本地代理
+
+  ```bash
+  # Host github.com
+  #    ProxyCommand nc -X 5 -x 127.0.0.1:1080 %h %p
+  ```
+
+  

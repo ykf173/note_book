@@ -18,7 +18,7 @@
 
 * 发展路线
 
-  ![图片](https://mmbiz.qpic.cn/mmbiz_jpg/AzuXfeINxjWPjV0hQpVtx7k6jicicLyKOTrPgky42qmTdddR8JiaxIC6y6K1gLBxOIWxV8L1W3Ujba6icOKURib03ibQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1)
+  ![](/Users/langming/我的/private/笔记/大模型/assets/640.jpeg)
 
 |中文|英文|备注|
 | :------: | :--: | :------: |
