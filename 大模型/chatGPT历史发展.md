@@ -16,7 +16,7 @@
 
 ### 2022版chatGPT
 
-* 发展路线
+* 发展路线[OpenAI的模型索引文档](https://platform.openai.com/docs/models/overview)
 
   ![](/Users/langming/我的/private/笔记/大模型/assets/640.jpeg)
 
