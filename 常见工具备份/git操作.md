@@ -1,5 +1,7 @@
 ## git骚操作
 
+[常用 Git 命令清单](https://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html)
+
 1. 将不是git文件的目录,添加到新的git分支
   ```bash
   git init
@@ -58,6 +60,28 @@ git status
 git log --graph --oneline
 ```
 
+8. 提交合并(多地，多人)
+
+```bash
+git branch
+git status
+git log --graph --oneline
+git fetch
+git pull
+git merge [branch]
+git add [filename]
+git push(如果报错，先合并，然后`git push --force`)
+```
+
+9. [git 分支比较](https://www.jianshu.com/p/bb97fabb475e)
+
+```bash 
+1. 显示出branch1和branch2中差异的部分
+git diff branch1 branch2 --stat
+```
+
+
+
 * 问题1：permission denied
 
   ![image-20230302143432374](/Users/langming/我的/private/笔记/常见工具备份/assets/image-20230302143432374.png)
@@ -69,7 +93,7 @@ git log --graph --oneline
 
 * 问题2:：报错：git 错误 fatal: Not a valid object name: 'master'. 
   	本地需要commit，建立连接，但是这会直接交到master ????
-  
+
 * 同时使用GitHub，Gitlab
 
   * 生成SSH-Key
@@ -112,6 +136,19 @@ git log --graph --oneline
   ```bash
   # Host github.com
   #    ProxyCommand nc -X 5 -x 127.0.0.1:1080 %h %p
+  ```
+
+* mac中文乱码问题
+
+  1. 修改配置 `git config --global core.quotepath false`
+  2. 修改配置文件
+
+  ```bash 
+  1、打开oh-my-zsh配置文件 ~/.zshrc
+  2、在文件最后面添加如下代码：
+  export LC_ALL=en_US.UTF-8
+  export LANG=en_US.UTF-8
+  3、重启下终端（terminal）或输入 source ~/.zshrc
   ```
 
   
