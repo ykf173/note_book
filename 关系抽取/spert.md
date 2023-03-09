@@ -2,7 +2,7 @@
 
 * 1. 模型
 
-     ![image-20230224134133086](/Users/langming/我的/private/笔记/关系抽取/assets/spert模型图-7845382.png)
+     ![image-20230224134133086](assets/spert模型图-7845382.png)
 
      * Span classification（区间分类）
 

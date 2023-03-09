@@ -16,13 +16,13 @@ jupyter notebook --no-browser --port 16800
 ​	  1. 生成配置文件
 
 ​			`jupyter notebook --generate-config`
-![image-20230301145211026](/Users/langming/我的/private/笔记/常见工具备份/assets/image-20230301145211026.png)
+![image-20230301145211026](assets/image-20230301145211026.png)
 
 ​		2. 设置访问密码			
 
 ​			`jupyter notebook passwd`
 
-![image-20230301144837787](/Users/langming/我的/private/笔记/常见工具备份/assets/image-20230301144837787.png)
+![image-20230301144837787](assets/image-20230301144837787.png)
 
 ​		3. 免登录访问
 
@@ -36,7 +36,7 @@ Out[2]: '*********'
 
 （1）修改配置文件 vim ~/.jupyter/jupyter_notebook_config.py
 
-![image-20230301145929446](/Users/langming/我的/private/笔记/常见工具备份/assets/image-20230301145929446.png)
+![image-20230301145929446](assets/image-20230301145929446.png)
 
 ```python3
 c.NotebookApp.password = u'sha1:67c9e60bb8b6:9ffede0    #设置免密登陆
@@ -60,5 +60,4 @@ c.NotebookApp.open_browser = False
 ```bash
  c.NotebookApp.notebook_dir = '工作目录'
 ```
-
 
