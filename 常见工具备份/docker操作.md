@@ -29,6 +29,3 @@ docker ps | grep （docker部分名称）
 从宿主机复制到docker内部：docker cp  宿主机位置 (dockerid):/文件位置
 ```
 
-  
-
-  
