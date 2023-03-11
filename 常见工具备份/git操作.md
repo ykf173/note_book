@@ -60,7 +60,7 @@ git log --graph --oneline
 
 * 问题1：permission denied
 
-  ![image-20230302143432374](/Users/langming/我的/private/笔记/常见工具备份/assets/image-20230302143432374.png)
+  ![image-20230302143432374](assets/image-20230302143432374.png)
 
 * 解决方案：
 

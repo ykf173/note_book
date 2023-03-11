@@ -58,4 +58,4 @@
   
   4. 实验
   
-     ![image-20230225200018387](/Users/langming/我的/private/笔记/关系抽取/assets/image-20230225200018387.png)
+     ![image-20230225200018387](assets/image-20230225200018387.png)
