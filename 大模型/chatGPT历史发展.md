@@ -33,19 +33,19 @@
 
   1. 相同点
 
-     * 响应人类指令
+     * **响应人类指令**
 
-     * 泛化到人类未见过的任务
+     * **泛化到人类未见过的任务**
 
-     * 代码生成和代码理解
+     * **代码生成和代码理解**
 
-     * 利用思维链（chain-of-thought）进行复杂推理：解锁突现能力和超越缩放法则（scaling laws）的关键。
+     * 利用思维链（chain-of-thought）进行**复杂推理**：解锁突现能力和超越缩放法则（scaling laws）的关键。
 
      * 指令学习和代码训练
 
           * **指令微调**： 响应人类指令
 
-          * **代码训练****：**可能**导致
+          * **代码训练**：**可能**导致
             
             > * 模型具有思维链进行复杂推理
             >
@@ -63,8 +63,33 @@
 #### **模型（code-cushman-001 和 text-davinci-001）v.s. 002 模型（code-davinci-002 和 text-davinci-002）**
 
 > *  001模型主要为了做纯代码/纯文本任务；002模型则深度融合了代码训练和指令微调，代码和文本都行
+>* Code-davinci-002**可能是第一个深度融合了代码训练和指令微调的模型。
+
+- **区分代码训练和指令微调效果的最好方法**可能是**比较 code-cushman-001、T5 和 FlanT5**
+
+#### **text-davinci-002，text-davinci-003 和 ChatGPT 之间的比较**
+
+> * 都经过指令微调
+> * **text-davinci-002**是一个经过监督学习的指令微调（supervised instruction tuning）的模型
+> * **text-davinci-003**和**chatGPT**是基于人类反馈的强化学习的指令微调（Instruction tuning with Reinforcement Learning from Human Feedback RLHF）
+
+#### RLHF
+
+> * 详实的回应
 >
-> * Code-davinci-002**可能是第一个深度融合了代码训练和指令微调的模型。证据
+> * 公正的回应
+>
+> * 拒绝不当问题：内容过滤器+RLHF模型自身能力
+>
+> * 拒绝其知识范围之外的问题
+>
+>   
+>
+> - 幕后发生的事情可能是：
+>
+>   - ChatGPT: 通过**牺牲上下文学习**的能力**换取建模对话历史**的能力。这是一个基于经验的观测结果，因为 ChatGPT 似乎不像 text-davinci-003 那样受到上下文演示的强烈影响。
+>
+>   - text-davinci-003：**恢复了** text-davinci-002 所牺牲的**上下文学习能力**， **提高零样本的能力**。我们不确定这是否也是 RLHF 或其他东西的副产品。 根据instructGPT的论文，这是来自于强化学习调整阶段混入了语言建模的目标（而不是 RLHF 本身）。
 
 
 |英文|中文|备注|
@@ -83,3 +108,7 @@
 |（RLHF）<br/>Reinforcement Learning with Human Feedback|基于人类反馈的强化学习|让人给模型生成的结果打分，用人打的分来调整模型|
 |Alignment|对齐|让机器生成符合人类期望，人类价值观的输出|
 |Alignment tax|对齐税|指令微调通过牺牲性能换取的对齐，并非故意，更可能是指令微调的副作用|
+
+## GPT-3.5进化历程
+
+![img](assets/76c319a94337aa20920b4a3f724cea62.png)
